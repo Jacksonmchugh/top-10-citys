@@ -4,7 +4,7 @@
 
 ## By: _Jackson McHugh_
 
-[Github]](https://github.com/Jacksonmchugh/top-10-citys) [Linkedin](https://www.linkedin.com/in/jackson-mchugh/)
+[Github](https://github.com/Jacksonmchugh/top-10-citys) [Linkedin](https://www.linkedin.com/in/jackson-mchugh/)
 
 # Description
 
