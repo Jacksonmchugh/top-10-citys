@@ -1,0 +1,23 @@
+{
+  "name": "top-10-citys",
+  "version": "1.0.0",
+  "description": "## Date: 7/25/22",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacksonmchugh/top-10-citys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacksonmchugh/top-10-citys/issues"
+  },
+  "homepage": "https://github.com/Jacksonmchugh/top-10-citys#readme",
+  "dependencies": {
+    "mongoose": "^6.4.6"
+  }
+}
