@@ -4,7 +4,7 @@
 
 ## By: _Jackson McHugh_
 
-[Github](https://github.com/Jacksonmchugh/top-10-citys) [Linkedin](https://www.linkedin.com/in/jackson-mchugh/)
+[lucid](https://lucid.app/lucidchart/57d657d3-2bc9-4a99-97a9-d835e31a5395/edit?viewport_loc=297%2C67%2C939%2C721%2C0_0&invitationId=inv_21f06d70-515c-467b-9437-4c2694561d16#) [Linkedin](https://www.linkedin.com/in/jackson-mchugh/) [Trello] (https://trello.com/b/BejRG6dc/top-10-citys)
 
 # Description
 
