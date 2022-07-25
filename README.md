@@ -21,9 +21,8 @@
 
 (https://i.imgur.com/uYrIH9i.png)
 
-## (MVP)
+#### Project Requirements (MVP)
 
-####Project Requirements (MVP)
 Your project must:
 
 Be a new repo. Create a new repo in your github and build your project there. DO NOT name your repository Project 2, give it a real name.
