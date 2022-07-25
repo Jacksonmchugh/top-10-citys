@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Jacksonmchugh/top-10-citys#readme",
   "dependencies": {
     "mongoose": "^6.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
