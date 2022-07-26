@@ -4,7 +4,7 @@ const { City } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-  const citys = [
+  const cities = [
     {
       name: 'New York City',
       state: 'New York',
@@ -107,7 +107,7 @@ const main = async () => {
     }
   ]
 
-  await City.insertMany(citys)
+  await City.insertMany(cities)
   console.log('Created citys!')
 }
 const run = async () => {

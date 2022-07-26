@@ -3,6 +3,7 @@ const cors = require('cors')
 const logger = require('morgan')
 const db = require('./db')
 const { City } = require('./models')
+const { Comment } = require('./models')
 const app = express()
 const PORT = process.env.PORT || 3001
 
@@ -13,10 +14,15 @@ app.use(express.urlencoded({ extended: false }))
 app.get('/', (req, res) => {
   res.send('Home page')
 })
-app.get('/citys', async (req, res) => {
-  const citys = await City.find({})
-  console.log('found citys')
-  res.json(citys)
+app.get('/cities', async (req, res) => {
+  const cities = await City.find({})
+  console.log(cities)
+  res.json(cities)
+})
+app.get('/comments', async (req, res) => {
+  const comments = await Comment.find({})
+  console.log(comments)
+  res.json(comments)
 })
 
 app.listen(PORT, () => {

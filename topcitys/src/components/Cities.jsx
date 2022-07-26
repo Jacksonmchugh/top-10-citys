@@ -31,11 +31,12 @@ const Cities = () => {
       { city ? 
         city.map((citys) => (
           <div className="city-card" onClick={() => showCityDetails(citys)} key={citys._id}>
-            <img src={citys.image} alt={citys.name}/>
+            <img style={{ display: 'block' }} src={citys.image} alt={citys.name}/>
             <h1>{citys.name}</h1>
           </div>
         ))
        : '' }
+       <Link to='/'>Back</Link>
     </div>
   )
 }
