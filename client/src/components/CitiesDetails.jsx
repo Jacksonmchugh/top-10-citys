@@ -1,41 +1,44 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 const CityDetails = (props) => {
-  
+  const location = useLocation()
   const [city, setCity] = useState('')
+  
 
   let { id }= useParams()
   
-  useEffect(() => {
-    let selectedCity = props.cities.find(
-      (city) => city.id === parseInt(id)
-    )
-    setCity(selectedCity)
-    
-  }, [props.city, id])
+  // useEffect(() => {
+  //   let selectedCity = props.cities.find(
+  //     (city) => city.id === parseInt(id)
+  //   )
+  //   setCity(selectedCity)
+  //   console.log(selectedCity)
+  // }, [props.city, id])
+  // console.log(location)
 
-  return city ? (
-    <div className="detail">
-      <div className="detail-header">
-        <img src={city.image} alt={city.name} />
-        <div style={{minWidth: '30em', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <h1>{city.name}</h1>
-        </div> 
+  // return city ? (
+  //   <div className="detail">
+  //     <div className="detail-header">
+  //       <img src={city.image} alt={city.name} />
+  //       <div style={{minWidth: '30em', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+  //         <h1>{city.name}</h1>
+  //       </div> 
         
-      </div>
-      <div className="info-wrapper">
-        <div style={{display: 'flex', justifyContent: 'space-between'}}>
-          <h3>Population: ${city.population}</h3>
-          <h3>City ID: {city.id}</h3>
-        </div>
-        <p>{city.description}</p>
-      </div>
-      <Link to="/cities">Back</Link>
-      <Link to='/'>Home</Link>
-    </div>
+  //     </div>
+  //     <div className="info-wrapper">
+  //       <div style={{display: 'flex', justifyContent: 'space-between'}}>
+  //         <h3>Population: {city.population}</h3>
+  //         <h3>City ID: {city.id}</h3>
+  //       </div>
+  //       <p>{city.description}</p>
+  //     </div>
+  //     <Link to="/cities">Back</Link>
+  //     <Link to='/'>Home</Link>
+  //   </div>
     
-  ) : null;
+  // ) : null;
 }
 
 export default CityDetails

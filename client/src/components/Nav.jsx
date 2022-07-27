@@ -11,7 +11,7 @@ export default function Nav() {
         <Link to='/About'>About </Link>
         <Link to="/Cities">Cities </Link>
         
-        <Link to='/Form'>City Form</Link>
+        <Link to='/CityForm'>City Form</Link>
         
       </div>
     </nav>
