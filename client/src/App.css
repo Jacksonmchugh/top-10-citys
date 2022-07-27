@@ -1,70 +1,8 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}.App {
-  text-align: center;
-}
-
-div {
-  background-size: cover;
-}
-
-.detail, .detail-header, .listings, .home, .home div, .boat-card, .navbar {
-  display: flex;
-}
 
 .home, .home div {
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.detail, .boat-card, .home div {
-  flex-direction: column;
-}
-
-.home div {
-  height: 40em;
-  width: 30em;
-}
-
-h2 {
-  text-align: left;
-  font-weight: normal;
+  
 }
 
 h1 {
@@ -73,12 +11,13 @@ h1 {
 
 h1, h2, h3, h4 {
   margin: 0;
+  text-align: center;
 }
 
 .navbar {
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: black;
   padding: 1em;
   min-height: 2em;
@@ -92,13 +31,13 @@ h1, h2, h3, h4 {
   margin-left: 0.5em;
 }
 
-.boat-grid {
+.city-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.boat-card {
+.city-card {
   padding: 1em;
   width: 18em;
   height: 15em;
@@ -112,18 +51,18 @@ h1, h2, h3, h4 {
   cursor: pointer;
 }
 
-.boat-card:hover {
+.city-card:hover {
   transform: scale(1.01);
 }
 
-.boat-card img {
+.city-card img {
   width: 100%;
   height: 10em;
   object-fit: center;
   box-shadow: inset 0 0 1em rgb(0, 0, 0);
 }
 
-.listings {
+.cities {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
@@ -189,3 +128,8 @@ button {
   margin-top: 1em;
 }
 
+.homeBackground {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  5px;
+}

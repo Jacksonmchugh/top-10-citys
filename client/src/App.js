@@ -1,3 +1,20 @@
+import './App.css'
+import { useState } from 'react'
+
+import Home from './Home'
+import { Route, Routes } from 'react-router-dom'
+
+const App = () => {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </div>
+  )
+}
+
+export default App
 // // import './App.css'
 // import { useState } from 'react'
 // import Nav from './components/Nav'
@@ -66,18 +83,3 @@
 // }
 
 // export default App
-import './styles/App.css'
-import { useState } from 'react'
-
-import Home from './components/Home'
-
-const App = () => {
-  return (
-    <div className="App">
-      <h1>Home</h1>
-      <Home />
-    </div>
-  )
-}
-
-export default App

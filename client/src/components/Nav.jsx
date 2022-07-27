@@ -1,9 +1,9 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
-import '../styles/Nav.css'
 
 
-function Nav() {
+
+export default function Nav() {
   return (
     <nav className="navbar">
       <div>
@@ -16,4 +16,3 @@ function Nav() {
   )
 }
 
-export default Nav
