@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import axios from 'axios'
 import { useState } from 'react'
 import { useEffect } from "react"
@@ -7,7 +7,7 @@ import { useEffect } from "react"
 
 const BASE_URL = 'http://localhost:3001'
 
-const Cities = () => {
+const Cities = (props) => {
   let navigate = useNavigate()
 
   const [city, setCity] = useState('')
@@ -24,7 +24,7 @@ const Cities = () => {
         setCity(res.data)
       }
     getCities()
-}, [])
+}, [props.city])
 
   return (
     <div className="cities-grid">

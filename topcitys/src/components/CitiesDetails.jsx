@@ -15,7 +15,7 @@ const CityDetails = (props) => {
     
   }, [props.city, id])
 
-  return boat ? (
+  return city ? (
     <div className="detail">
       <div className="detail-header">
         <img src={city.image} alt={city.name} />
@@ -32,6 +32,7 @@ const CityDetails = (props) => {
         <p>{city.description}</p>
       </div>
       <Link to="/cities">Back</Link>
+      <Link to='/'>Home</Link>
     </div>
     
   ) : null;
