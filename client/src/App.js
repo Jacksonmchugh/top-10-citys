@@ -1,20 +1,27 @@
 import './App.css'
 import { useState } from 'react'
-
+import Nav from './components/Nav'
 import Home from './Home'
 import { Route, Routes } from 'react-router-dom'
-
+import About from './About'
+import Cities from './components/Cities'
 const App = () => {
   return (
     <div className="App">
+      <header>
+        <Nav />
+      </header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/About" element={<About />}></Route>
+        <Route path="/Cities" element={<Cities />}></Route>
       </Routes>
     </div>
   )
 }
 
 export default App
+
 // // import './App.css'
 // import { useState } from 'react'
 // import Nav from './components/Nav'
@@ -53,33 +60,33 @@ export default App
 //   //     setNewCity({ ...newCity, [e.target.name]: e.target.value })
 //   //   }
 
-//   {
-//     return (
-//       <div>
-//         <header>{/* <Nav /> */}</header>
-//         <main>
-//           <Routes>
-//             <Route path="/" element={<Home />} />
-//             <Route path="/Cities" element={<Cities />} />
-//             {/* <Route
-//               path="/Cities/:id"
-//               element={<CityDetails cities={cities} />}
-//             />
-//             <Route
-//               path="new"
-//               element={
-//                 <CityForm
-//                   newCity={newCity}
-//                   handleChange={handleChange}
-//                   addCity={addCity}
-//                 /> */}
-//             {/* } */}
-//             {/* /> */}
-//           </Routes>
-//         </main>
-//       </div>
-//     )
-//   }
+// {
+//   return (
+//     <div>
+//       <header>{/* <Nav /> */}</header>
+//       <main>
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/Cities" element={<Cities />} />
+//            { <Route
+//             path="/Cities/:id"
+//             element={<CityDetails cities={cities} />}
+//           /> }
+//           <Route
+//             path="new"
+//             element={
+//               <CityForm
+//                 newCity={newCity}
+//                 handleChange={handleChange}
+//                 addCity={addCity}
+//               /> */}
+//           {/* } */}
+//           {/* /> */}
+//         </Routes>
+//       </main>
+//     </div>
+//   )
+// }
 // }
 
 // export default App
