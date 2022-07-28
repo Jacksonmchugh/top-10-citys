@@ -12,27 +12,7 @@ const CityDetails = (props) => {
   
 
   let { id }= useParams()
-  // function LikeTotal({ totalLikes }) {
-  //   return <p>{totalLikes}</p>;
-  //   }
-  //   function Likes(props) {
-  //     const [totalLikes, setTotalLikes] = useState(0);
-  //     function incrementLikes() {
-  //       setTotalLikes(totalLikes + 1);
-  //     }
-  //     function decrementLikes() {
-  //       if (totalLikes) setTotalLikes(totalLikes - 1);
-  //     }
-  //     return (
-  //       <>
-  //         <LikeTotal totalLikes={totalLikes} />
-  //         <button className="increment" onClick={incrementLikes}>
-  //           Like
-  //         </button>
-          
-  //       </>
-  //     );
-    // }
+ 
   useEffect(() => {
     
     const selectedCity = async()=>{
@@ -56,7 +36,7 @@ const CityDetails = (props) => {
           <h1>{city.name}</h1>
         </div> 
         
-      <Link to='/'>Home</Link>
+      
       </div>
       <div className="info-wrapper">
         <div style={{display: 'flex', justifyContent: 'space-between'}}>
@@ -64,11 +44,9 @@ const CityDetails = (props) => {
           <h3>Visits per year: {city.visits}</h3>
         </div>
         <p>{city.description}</p>
-        {/* <LikeTotal totalLikes={totalLikes} />
-          <button className="increment" onClick={incrementLikes}>
-             Like
-           </button> */}
-          <button>Like</button>
+        
+           <Link to='/'>Home</Link>
+          
         <Link to="/cities">Back</Link>
         
       </div>
@@ -77,5 +55,6 @@ const CityDetails = (props) => {
     
   ) : null;
 }
+
 
 export default CityDetails

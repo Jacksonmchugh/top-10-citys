@@ -7,8 +7,7 @@ const City = new Schema(
     image: { type: String, required: true },
     visits: { type: Number, required: true },
     population: { type: Number, required: true },
-    description: { type: String, required: true },
-    likes: { type: Number, required: true }
+    description: { type: String, required: true }
   },
   { timestamps: true }
 )

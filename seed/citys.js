@@ -12,8 +12,7 @@ const main = async () => {
       visits: 65200000,
       population: 8800000,
       description:
-        'Prominent Tourist Attractions: Statue of Libert. Empire State Building. Central Park. Nicknames: The Big Apple. The City that Never Sleeps. The Melting Pot.',
-      likes: 0
+        'Prominent Tourist Attractions: Statue of Libert. Empire State Building. Central Park. Nicknames: The Big Apple. The City that Never Sleeps. The Melting Pot.'
     },
     {
       name: 'Los Angeles',
@@ -22,8 +21,7 @@ const main = async () => {
       visits: 50000000,
       population: 3900000,
       description:
-        'Nicknames: L.A., La-La Land, City of Angels. Prominent Tourist Attractions: Hollywood, Griffith Observatory, Sunset Boulevard ',
-      likes: 0
+        'Nicknames: L.A., La-La Land, City of Angels. Prominent Tourist Attractions: Hollywood, Griffith Observatory, Sunset Boulevard '
     },
     {
       name: 'Chicago',
@@ -32,8 +30,7 @@ const main = async () => {
       visits: 57600000,
       population: 2700000,
       description:
-        'Nicknames: The Windy City, City of Big Shoulders, The Second City. Prominent Tourist Attractions: Millennium Park, Willis Tower, Navy Pier ',
-      likes: 0
+        'Nicknames: The Windy City, City of Big Shoulders, The Second City. Prominent Tourist Attractions: Millennium Park, Willis Tower, Navy Pier '
     },
     {
       name: 'Houston',
@@ -42,8 +39,7 @@ const main = async () => {
       visits: 22300000,
       population: 2300000,
       description:
-        'Nicknames: Space City, H-Town, The Big Heart. Prominent Tourist Attractions: Space Center, Hermann Park, Houston Zoo',
-      likes: 0
+        'Nicknames: Space City, H-Town, The Big Heart. Prominent Tourist Attractions: Space Center, Hermann Park, Houston Zoo'
     },
     {
       name: 'Phoenix',
@@ -52,8 +48,7 @@ const main = async () => {
       visits: 22000000,
       population: 1610000,
       description:
-        'Nicknames: Valley of the Sun, The Valley. Prominent Tourist Attractions: Desert Botanical Garden, Papago Park, South Mountain Park and Preserve ',
-      likes: 0
+        'Nicknames: Valley of the Sun, The Valley. Prominent Tourist Attractions: Desert Botanical Garden, Papago Park, South Mountain Park and Preserve '
     },
     {
       name: 'Philadelphia',
@@ -62,8 +57,7 @@ const main = async () => {
       visits: 43300000,
       population: 1600000,
       description:
-        'Nicknames: The City of Brotherly Love, The Birthplace of America, The Quaker City. Prominent Tourist Attractions: Liberty Bell, Independence Hall, Philadelphia Museum of Art',
-      likes: 0
+        'Nicknames: The City of Brotherly Love, The Birthplace of America, The Quaker City. Prominent Tourist Attractions: Liberty Bell, Independence Hall, Philadelphia Museum of Art'
     },
     {
       name: 'San Antonio',
@@ -72,8 +66,7 @@ const main = async () => {
       visits: 37000000,
       population: 1430000,
       description:
-        'Nicknames: Alamo City, Countdown City, River City. Prominent Tourist Attractions: The Alamo, San Antonio River Walk, San Antonio Missions National Historical Park ',
-      likes: 0
+        'Nicknames: Alamo City, Countdown City, River City. Prominent Tourist Attractions: The Alamo, San Antonio River Walk, San Antonio Missions National Historical Park '
     },
     {
       name: 'San Diego',
@@ -82,8 +75,7 @@ const main = async () => {
       visits: 35800000,
       population: 1400000,
       description:
-        'Nicknames: Americas Finest City, City in Motion, Silicon Beach. Prominent Tourist Attractions: Balboa Park, San Diego Zoo, USS Midway Museum ',
-      likes: 0
+        'Nicknames: Americas Finest City, City in Motion, Silicon Beach. Prominent Tourist Attractions: Balboa Park, San Diego Zoo, USS Midway Museum '
     },
     {
       name: 'Dallas',
@@ -92,8 +84,7 @@ const main = async () => {
       visits: 49000000,
       population: 1300000,
       description:
-        'Nicknames: City of Hate, D-Town, The Metroplex. Prominent Tourist Attractions: The Dallas Arboretum and Botanical Garden, Klyde Warren Park, The Dallas World Aquarium',
-      likes: 0
+        'Nicknames: City of Hate, D-Town, The Metroplex. Prominent Tourist Attractions: The Dallas Arboretum and Botanical Garden, Klyde Warren Park, The Dallas World Aquarium'
     },
     {
       name: 'San Jose',
@@ -102,8 +93,7 @@ const main = async () => {
       visits: 42700000,
       population: 1000000,
       description:
-        'Nicknames: The Capital of Silicon Valley, San Jo. Prominent Tourist Attractions: San José Museum of Art, Californias Great America, Computer History Museum',
-      likes: 0
+        'Nicknames: The Capital of Silicon Valley, San Jo. Prominent Tourist Attractions: San José Museum of Art, Californias Great America, Computer History Museum'
     }
   ]
 

@@ -8,6 +8,23 @@ import Cities from './components/Cities'
 import CityForm from './components/CityForm'
 import CityDetails from './components/CitiesDetails'
 const App = () => {
+  const addCity = (e) => {
+    e.preventDefault()
+    const currentCity = cities
+    const createdCity = {
+      ...newCity,
+      id: parseInt(city.length + 1),
+      population: parseInt(newCity.population)
+    }
+    currentCity.push(createdCity)
+    setCity(currentCity)
+    setNewCity({ id: '', name: '', image: '', description: '', population: '' })
+  }
+
+  const handleChange = (e) => {
+    setNewCity({ ...newCity, [e.target.name]: e.target.value })
+  }
+
   return (
     <div className="App">
       <header>
@@ -46,23 +63,6 @@ export default App
 //   //     description: '',
 //   //     population: ''
 //   //   })
-
-//   //   const addCity = (e) => {
-//   //     e.preventDefault()
-//   //     const currentCity = cities
-//   //     const createdCity = {
-//   //       ...newCity,
-//   //       id: parseInt(city.length + 1),
-//   //       population: parseInt(newCity.population)
-//   //     }
-//   //     currentCity.push(createdCity)
-//   //     setCity(currentCity)
-//   //     setNewCity({ id: '', name: '', img: '', description: '', population: '' })
-//   //   }
-
-//   //   const handleChange = (e) => {
-//   //     setNewCity({ ...newCity, [e.target.name]: e.target.value })
-//   //   }
 
 // {
 //   return (

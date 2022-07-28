@@ -4,8 +4,6 @@ const logger = require('morgan')
 const db = require('./db')
 const { City } = require('./models')
 const { Comment } = require('./models')
-const { useParams } = require('react-router-dom')
-const { default: CityForm } = require('./client/src/components/CityForm')
 
 const app = express()
 const PORT = process.env.PORT || 3001
