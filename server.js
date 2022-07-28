@@ -4,6 +4,7 @@ const logger = require('morgan')
 const db = require('./db')
 const { City } = require('./models')
 const { Comment } = require('./models')
+const { useParams } = require('react-router-dom')
 
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -21,10 +22,17 @@ app.get('/cities', async (req, res) => {
   console.log(cities)
   res.json(cities)
 })
-app.get('/comments', async (req, res) => {
-  const comments = await Comment.find({})
-  console.log(comments)
-  res.json(comments)
+app.get('/cities/:id', async (req, res) => {
+  let { id } = req.params
+  const citydetails = await City.findById(id)
+  console.log(citydetails)
+  res.json(citydetails)
+})
+
+app.post('/cityform', async (req, res) => {
+  const newCity = await City.find({})
+  console.log(newCity)
+  res.json(newCity)
 })
 
 app.listen(PORT, () => {

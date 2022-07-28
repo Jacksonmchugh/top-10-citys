@@ -31,7 +31,7 @@ const Cities = (props) => {
 
   return (
     <div className="cities-grid">
-      <Link to='/'>Back</Link>
+      
       { city ? 
         city.map((citys) => (
           <div className="city-card" onClick={() => showCities(citys)} key={citys._id}>

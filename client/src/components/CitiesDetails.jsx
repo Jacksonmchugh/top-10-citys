@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import LikeTotal from '../LikeTotal'
 import Likes from '../Likes'
-const CityDetails = (props) => {
-  const location = useLocation()
-  const [city, setCity] = useState('')
-  console.log(city)
+import axios from 'axios'
 
-  // let { id }= useParams()
+const CityDetails = (props) => {
+  
+  const [city, setCity] = useState('')
+  
+
+  let { id }= useParams()
   // function LikeTotal({ totalLikes }) {
   //   return <p>{totalLikes}</p>;
   //   }
@@ -31,24 +33,29 @@ const CityDetails = (props) => {
   //       </>
   //     );
   //   }
-  // useEffect(() => {
-  //   let selectedCity = props.cities.find(
-  //     (city) => city.id === parseInt(id)
-  //   )
-  //   setCity(selectedCity)
-  //   console.log(selectedCity)
-  // }, [props.city, id])
-  // console.log(location)
+  useEffect(() => {
+    
+    const selectedCity = async()=>{
+      try {
+        let res = await axios.get(`http://localhost:3001/cities/${id}`)
+        console.log(res.data)
+        setCity(res.data)
+      } catch(eer){
+        console.log(eer)
+      }
+    }
+    setCity(selectedCity)
+  },[])
 
-  return setCity ? (
+  return city ? (
     <div className="detail">
       <div className="detail-header">
       
-        <img src={city.image} alt={city.name} />
+        <img src={city.image} alt={city.image} />
         <div style={{minWidth: '30em', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <h1>{city.name}</h1>
         </div> 
-        <Link to="/cities">Back</Link>
+        
       <Link to='/'>Home</Link>
       </div>
       <div className="info-wrapper">
@@ -57,9 +64,12 @@ const CityDetails = (props) => {
           <h3>Visits per year: {city.visits}</h3>
         </div>
         <p>{city.description}</p>
-        {/* <LikeTotal  /> */}
-        <button>Like</button>
+        {/* <LikeTotal totalLikes={totalLikes} />
+          <button className="increment" onClick={incrementLikes}>
+             Like
+           </button> */}
           
+        <Link to="/cities">Back</Link>
         
       </div>
       
