@@ -32,7 +32,7 @@ const CityDetails = (props) => {
           
   //       </>
   //     );
-  //   }
+    // }
   useEffect(() => {
     
     const selectedCity = async()=>{
@@ -68,7 +68,7 @@ const CityDetails = (props) => {
           <button className="increment" onClick={incrementLikes}>
              Like
            </button> */}
-          
+          <button>Like</button>
         <Link to="/cities">Back</Link>
         
       </div>

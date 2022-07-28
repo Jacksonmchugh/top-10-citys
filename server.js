@@ -5,6 +5,7 @@ const db = require('./db')
 const { City } = require('./models')
 const { Comment } = require('./models')
 const { useParams } = require('react-router-dom')
+const { default: CityForm } = require('./client/src/components/CityForm')
 
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -28,11 +29,14 @@ app.get('/cities/:id', async (req, res) => {
   console.log(citydetails)
   res.json(citydetails)
 })
-
+app.get('/cityform', async (req, res) => {
+  let cityform = await City.find({})
+  res.send(cityform)
+})
 app.post('/cityform', async (req, res) => {
-  const newCity = await City.find({})
-  console.log(newCity)
-  res.json(newCity)
+  console.log('here is the form', req.body)
+  let newCity = await City.create(req.body)
+  res.send(newCity)
 })
 
 app.listen(PORT, () => {
