@@ -26,6 +26,10 @@ const CityDetails = (props) => {
     }
     setCity(selectedCity)
   },[])
+  const onDelete = (id)=>{
+    axios.delete(`http://localhost:3000/cities/:${id}`)
+    console.log('this will delete')
+  }
 
   return city ? (
     <div className="detail">
@@ -46,6 +50,7 @@ const CityDetails = (props) => {
         <p>{city.description}</p>
         
            <Link to='/'>Home</Link>
+           <button onClick={()=> onDelete(data.id)}>Delete City</button>
           
         <Link to="/cities">Back</Link>
         
