@@ -33,9 +33,10 @@ h1, h2, h3, h4 {
 }
 
 .city-grid {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   justify-content: space-around;
+  
 }
 
 .city-card {
