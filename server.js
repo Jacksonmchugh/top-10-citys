@@ -29,6 +29,11 @@ app.get('/cities/:id', async (req, res) => {
   res.json(citydetails)
 })
 
+app.post('/cities/:id', async (req, res) => {
+  console.log('update a city', req.body)
+  let updateCity = await City.updateOne(req.body)
+})
+
 //delete
 
 app.delete('/cities/:id', async (req, res) => {
