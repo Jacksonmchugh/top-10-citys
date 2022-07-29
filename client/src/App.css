@@ -22,6 +22,7 @@ h1, h2, h3, h4 {
   padding: 1em;
   min-height: 2em;
   font-family: 'Georgia';
+  justify-content: center;
 }
 
 .navbar a {
@@ -133,4 +134,9 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size:  10px;
+}
+.about {
+  background-color: aqua;
+  justify-content: center;
+
 }

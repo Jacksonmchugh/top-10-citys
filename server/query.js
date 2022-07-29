@@ -1,5 +1,5 @@
-const db = require('./db')
-const { Comment, City } = require('./models')
+const db = require('../db')
+const { Comment, City } = require('../models')
 
 const findAllCities = async () => {
   const cities = await City.find()
