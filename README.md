@@ -20,6 +20,11 @@
 ## Screenshots
 
 (https://i.imgur.com/uYrIH9i.png)
+(https://i.imgur.com/x6sguBp.png)
+(https://i.imgur.com/xN2X9pb.png)
+(https://i.imgur.com/3WDqk36.png)
+(https://i.imgur.com/nNj65lM.png)
+(https://i.imgur.com/3WDqk36.png)
 
 #### Project Requirements (MVP)
 
