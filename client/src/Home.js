@@ -1,3 +1,5 @@
+import './App.css'
+
 const Home = () => {
   return (
     <div className="home">
@@ -14,8 +16,7 @@ const Home = () => {
           alt="background"
           style={{
             margin: 'auto',
-            maxWidth: '50%',
-            backgroundPosition: 'center'
+            maxWidth: '100%'
           }}
         />
       </div>

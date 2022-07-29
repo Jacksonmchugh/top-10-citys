@@ -24,6 +24,13 @@ const App = () => {
   const handleChange = (e) => {
     setNewCity({ ...newCity, [e.target.name]: e.target.value })
   }
+  // const removeCity = ()=>{
+  //   const city = cities
+  //   if(lastCity.length > 0){
+  //     const lastIndex = city.length - 1
+  //     setCities(city.filter((city, )))
+  //   }
+  // }
 
   return (
     <div className="App">
@@ -42,55 +49,3 @@ const App = () => {
 }
 
 export default App
-
-// // import './App.css'
-// import { useState } from 'react'
-// import Nav from './components/Nav'
-// import Home from './components/Home'
-// import City from './components/Cities'
-// import { Routes, Route } from 'react-router-dom'
-// import CityDetails from './components/CitiesDetails'
-// import CityForm from './components/CityForm'
-// import Cities from './components/Cities'
-
-// const App = () => {
-
-//   //   const [cities, setCities] = useState(citiesArray)
-//   //   const [newCity, setNewCity] = useState({
-//   //     id: '',
-//   //     name: '',
-//   //     img: '',
-//   //     description: '',
-//   //     population: ''
-//   //   })
-
-// {
-//   return (
-//     <div>
-//       <header>{/* <Nav /> */}</header>
-//       <main>
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/Cities" element={<Cities />} />
-//            { <Route
-//             path="/Cities/:id"
-//             element={<CityDetails cities={cities} />}
-//           /> }
-//           <Route
-//             path="new"
-//             element={
-//               <CityForm
-//                 newCity={newCity}
-//                 handleChange={handleChange}
-//                 addCity={addCity}
-//               /> */}
-//           {/* } */}
-//           {/* /> */}
-//         </Routes>
-//       </main>
-//     </div>
-//   )
-// }
-// }
-
-// export default App

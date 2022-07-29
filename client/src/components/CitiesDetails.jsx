@@ -1,15 +1,14 @@
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
-import LikeTotal from '../LikeTotal'
-import Likes from '../Likes'
+
 import axios from 'axios'
 
 const CityDetails = (props) => {
   
   const [city, setCity] = useState('')
-  
+  const [formState, setFormState]=useState('')
 
   let { id }= useParams()
  
@@ -26,10 +25,24 @@ const CityDetails = (props) => {
     }
     setCity(selectedCity)
   },[])
-  const onDelete = (id)=>{
-    axios.delete(`http://localhost:3000/cities/:${id}`)
+
+// const editCity = async()={
+
+// }
+
+
+  const deleteCity = async () =>{
+    await axios.delete(`http://localhost:3001/cities/${id}`)
+    props.selectedCity()
     console.log('this will delete')
   }
+  // const deleteCity = async (id)=>{
+  //   let res = await axios.delete(`http://localhost:3001/cities/${id}`,
+  //   formState
+  //   )
+  //   Navigate('/cities')
+  // }
+  
 
   return city ? (
     <div className="detail">
@@ -49,8 +62,10 @@ const CityDetails = (props) => {
         </div>
         <p>{city.description}</p>
         
+        
            <Link to='/'>Home</Link>
-           <button onClick={()=> onDelete(data.id)}>Delete City</button>
+           <button>Edit</button>
+           <button onClick={deleteCity}>Delete City</button>
           
         <Link to="/cities">Back</Link>
         

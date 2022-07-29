@@ -1,9 +1,9 @@
 
 .home, .home div {
-  justify-content: center;
-  align-items: center;
-  
+  align-items: right;
+  margin: auto,
 }
+
 
 h1 {
   font-family: 'Georgia'
