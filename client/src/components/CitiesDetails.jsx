@@ -62,8 +62,11 @@ const updateCity = async()=>{
         <p>{city.description}</p>
         
         
-           <Link to='/'>Home</Link>
-           <button>Edit</button>
+           
+
+
+           <Link to='/updatecity'>Edit City</Link>
+
            <button onClick={deleteCity}>Delete City</button>
           
         <Link to="/cities">Back</Link>
@@ -74,6 +77,8 @@ const updateCity = async()=>{
     
   ) : null;
 }
+
+
 
 
 export default CityDetails

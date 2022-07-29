@@ -55,6 +55,13 @@ app.post('/cityform', async (req, res) => {
   res.send(newCity)
 })
 
+// update city
+app.post('/updatecity', async (req, res) => {
+  console.log('updating city now', req.body)
+  let updateCity = await City.updateOne(req.body)
+  res.send(updateCity)
+})
+
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
 })
