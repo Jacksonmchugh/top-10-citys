@@ -33,7 +33,7 @@ app.get('/cities/:id', async (req, res) => {
 
 app.delete('/cities/:id', async (req, res) => {
   let { id } = req.params
-  const citydetails = await City.findById(id)
+  const citydetails = await City.findByIdAndDelete(id)
   console.log(citydetails)
   res.send(citydetails)
 })

@@ -31,17 +31,18 @@ const CityDetails = (props) => {
 // }
 
 
-  const deleteCity = async () =>{
-    await axios.delete(`http://localhost:3001/cities/${id}`)
-    props.selectedCity()
-    console.log('this will delete')
-  }
-  // const deleteCity = async (id)=>{
-  //   let res = await axios.delete(`http://localhost:3001/cities/${id}`,
-  //   formState
-  //   )
-  //   Navigate('/cities')
+  // const deleteCity = async () =>{
+  //   await axios.delete(`http://localhost:3001/cities/${id}`)
+  //   props.selectedCity()
+  //   console.log('this will delete')
   // }
+  const deleteCity = async ()=>{
+    console.log(id)
+    let res = await axios.delete(`http://localhost:3001/cities/${id}`,
+    
+    )
+    Navigate('/cities')
+  }
   
 
   return city ? (
