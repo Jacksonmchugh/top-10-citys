@@ -41,6 +41,7 @@ const main = async () => {
       city: 'San Antonio'
     },
     {
+      name: 'Sarah',
       body: 'This is the best city in the USA!',
       city: 'San Diego'
     },

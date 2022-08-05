@@ -21,6 +21,11 @@ app.get('/cities', async (req, res) => {
   console.log(cities)
   res.json(cities)
 })
+app.get('/comments', async (req, res) => {
+  const cities = await Comment.find({})
+  console.log(comments)
+  res.json(comments)
+})
 
 app.get('/cities/:id', async (req, res) => {
   let { id } = req.params
