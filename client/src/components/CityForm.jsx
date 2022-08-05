@@ -1,6 +1,6 @@
 import axios from "axios"
 import React from "react"
-import { useNavigate } from "react-router-dom"
+
 import { Link } from "react-router-dom"
 import { useState, useEffect } from 'react'
 function CityForm() {
@@ -60,8 +60,8 @@ function CityForm() {
         </form>
            
             
-        <Link to="/cities">Cities</Link>
-        <Link to='/'>Home</Link>
+        <Link to="/cities">Back</Link>
+        
         </div>
         )
             }

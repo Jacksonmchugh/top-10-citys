@@ -1,17 +1,21 @@
 
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 
 export default function Nav() {
   return (
-    <nav className="navbar">
+    <nav className="flex-row">
       <div>
-        <Link to ="/">Home </Link>
-        <Link to='/About'>About </Link>
-        <Link to="/Cities">Cities </Link>
+        <NavLink to ="/" className={({ isActive})=>
+      isActive ? "active" : undefined}>Home</NavLink>
+        <NavLink to='/About' className={({ isActive})=>
+      isActive ? "active" : undefined}>About </NavLink>
+        <NavLink to="/Cities" className={({ isActive})=>
+      isActive ? "active" : undefined}>Cities </NavLink>
         
-        <Link to='/CityForm'>City Form</Link>
+        <NavLink to='/CityForm' className={({ isActive})=>
+      isActive ? "active" : undefined}>City Form</NavLink>
         
       </div>
     </nav>

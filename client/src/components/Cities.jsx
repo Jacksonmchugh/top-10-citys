@@ -31,7 +31,6 @@ const Cities = (props) => {
 
   return (
     <div className="cities-grid">
-      <Link to='/'>Home</Link>
       
       { city ? 
         city.map((citys) => (
