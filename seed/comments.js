@@ -6,44 +6,53 @@ const main = async () => {
   let cities = await City.find()
   const comments = [
     {
+      name: 'Sarah',
       body: 'This is the best city in the USA!',
-      city: cities[0]._id
+      city: 'New York City'
     },
     {
+      name: 'Sarah',
       body: 'This is the best city to live in!',
-      city: cities[1]._id
+      city: 'Los Angeles'
     },
     {
+      name: 'Sarah',
       body: 'This is the most interesting city in the USA!',
-      city: cities[2]._id
+      city: 'Chicago'
+    },
+    {
+      name: 'Sarah',
+      body: 'This is the best city in the USA!',
+      city: 'Houston'
+    },
+    {
+      name: 'Sarah',
+      body: 'This is the best city in the USA!',
+      city: 'Phoenix'
+    },
+    {
+      name: 'Sarah',
+      body: 'This is the best city in the USA!',
+      city: 'Philadelphia'
+    },
+    {
+      name: 'Sarah',
+      body: 'This is the best city in the USA!',
+      city: 'San Antonio'
     },
     {
       body: 'This is the best city in the USA!',
-      city: cities[3]._id
+      city: 'San Diego'
     },
     {
+      name: 'Sarah',
       body: 'This is the best city in the USA!',
-      city: cities[4]._id
+      city: 'Dallas'
     },
     {
+      name: 'John',
       body: 'This is the best city in the USA!',
-      city: cities[5]._id
-    },
-    {
-      body: 'This is the best city in the USA!',
-      city: cities[6]._id
-    },
-    {
-      body: 'This is the best city in the USA!',
-      city: cities[7]._id
-    },
-    {
-      body: 'This is the best city in the USA!',
-      city: cities[8]._id
-    },
-    {
-      body: 'This is the best city in the USA!',
-      city: cities[9]._id
+      city: 'San Jose'
     }
   ]
   await Comment.insertMany(comments)
