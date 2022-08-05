@@ -15,8 +15,9 @@ const App = () => {
 
   useEffect(() => {
     const getCities = async () => {
-      const res = await axios.get(`localhost:3000/cities`)
+      const res = await axios.get(`localhost:3001/cities`)
       setCities(res.data)
+      
     }
     getCities()
   }, [])

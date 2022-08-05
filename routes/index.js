@@ -2,7 +2,7 @@ const { Router } = require('express')
 const { cites, comments } = require('../controllers')
 const router = Router()
 
-router.get('cities', cites.getAllCities)
+router.get('/cities', cities.getAllCities)
 router.post('/cities', cities.createCity)
 router.get('/cities/:id', cities.getOneCity)
 router.post('/cities/:id/comments', comments.createComment)

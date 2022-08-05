@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 import { useState, useEffect } from 'react'
 
 function UpdateCity() {
@@ -95,9 +95,6 @@ function UpdateCity() {
 
         <button type="submit">Submit</button>
       </form>
-
-      <Link to="/cities">Cities</Link>
-      <Link to="/">Home</Link>
     </div>
   )
 }

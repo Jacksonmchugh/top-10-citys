@@ -2,9 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
 const db = require('./db')
-const { City } = require('./models')
-const { Comment } = require('./models')
 
+const routes = require('./db')
 const app = express()
 const PORT = process.env.PORT || 3001
 
