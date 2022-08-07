@@ -26,12 +26,12 @@ const Comments = (props) => {
   }, [props.comment])
   
     return (
-      <div className="cities-grid">
+      <div className="comments-grid">
         
         
         { comment ? 
           comment.map((comment) => (
-            <div className="city-card" >
+            <div className="comment-card" >
               <h1>{comment.name}</h1>
               <h2>{comment.body}</h2>
               <h3>{comment.city}</h3>
@@ -43,4 +43,4 @@ const Comments = (props) => {
     )
   }
   
-  export default Cities
+  export default Comments

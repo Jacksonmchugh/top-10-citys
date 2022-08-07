@@ -3,7 +3,7 @@ const { Comment, City } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-  let cities = await City.find()
+  let comment = await Comment.find()
   const comments = [
     {
       name: 'Sarah',

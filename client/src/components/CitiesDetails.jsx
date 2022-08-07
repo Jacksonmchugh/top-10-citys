@@ -60,13 +60,19 @@ const updateCity = async()=>{
           <h3>Visits per year: {city.visits}</h3>
         </div>
         <p>{city.description}</p>
-          <Link to='/updatecity'>Edit City</Link>
+          
+      </div>
+      <div>
+
+
+        <h3></h3>
+      <Link to='/updatecity'>Edit City</Link>
 
           <button onClick={deleteCity}>Delete City</button>
           
         <Link to="/cities">Back</Link>
+        </div>
         
-      </div>
       
     </div>
     

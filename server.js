@@ -22,7 +22,12 @@ app.get('/cities', async (req, res) => {
   res.json(cities)
 })
 app.get('/comments', async (req, res) => {
-  const cities = await Comment.find({})
+  const comments = await Comment.find({})
+  console.log(comments)
+  res.json(comments)
+})
+app.get('/cities/:id', async (req, res) => {
+  const comments = await Comment.find({})
   console.log(comments)
   res.json(comments)
 })
@@ -58,6 +63,11 @@ app.post('/cityform', async (req, res) => {
   console.log('here is the form', req.body)
   let newCity = await City.create(req.body)
   res.send(newCity)
+})
+app.post('/commentform', async (req, res) => {
+  console.log('here is the form', req.body)
+  let newComment = await Comment.create(req.body)
+  res.send(newComment)
 })
 
 // update city

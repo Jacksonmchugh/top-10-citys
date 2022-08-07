@@ -13,10 +13,12 @@ export default function Nav() {
       isActive ? "active" : undefined}>About </NavLink>
         <NavLink to="/Cities" className={({ isActive})=>
       isActive ? "active" : undefined}>Cities </NavLink>
-      <NavLink to="/Comments">Comments</NavLink>
-        
+      <NavLink to="/comments" className={({ isActive})=>
+      isActive ? "active" : undefined}>Comments </NavLink>
         <NavLink to='/CityForm' className={({ isActive})=>
       isActive ? "active" : undefined}>City Form</NavLink>
+       <NavLink to='/CommentForm' className={({ isActive})=>
+      isActive ? "active" : undefined}>Comment Form</NavLink>
         
       </div>
     </nav>

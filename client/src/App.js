@@ -8,6 +8,7 @@ import Cities from './components/Cities'
 import CityForm from './components/CityForm'
 import CityDetails from './components/CitiesDetails'
 import UpdateCity from './components/UpdateCity'
+import Comments from './components/Comments'
 const App = () => {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/Cities/:id" element={<CityDetails />}></Route>
         <Route path="/CityForm" element={<CityForm />}></Route>
         <Route path="/UpdateCity" element={<UpdateCity />}></Route>
+        <Route path="/Comments" element={<Comments />}></Route>
       </Routes>
     </div>
   )
